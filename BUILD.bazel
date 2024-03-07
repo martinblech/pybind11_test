@@ -1,0 +1,8 @@
+cc_binary(
+    name = "pybind11_test",
+    srcs = ["pybind11_test.cc"],
+    deps = [
+        "@pybind11",
+        "@rules_python//python/cc:current_py_cc_libs",
+    ],
+)

@@ -1,0 +1,5 @@
+bazel_dep(name = "rules_cc", version = "0.0.9")
+bazel_dep(name = "rules_python", version = "0.31.0")
+bazel_dep(name = "pybind11_bazel", version = "2.11.1.bzl.3")
+
+use_repo(use_extension("@pybind11_bazel//:internal_configure.bzl", "internal_configure_extension"), "pybind11")
